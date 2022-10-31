@@ -55,6 +55,33 @@ h2 {
   height: 35vw !important;
   font-size: 1.6vw;
 }
+
+.navbar:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar:last-child {
+  margin-top: 8rem;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link:hover {
+  color: pink;
+}
+
+.nav-link:visited {
+  color: whitesmoke;
+}
+
 @media (max-width: 1050px) {
   .card {
     width: 25vw !important;
