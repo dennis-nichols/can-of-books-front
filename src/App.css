@@ -32,10 +32,6 @@
   font-weight: 600;
 }
 
-.navbar:last-child {
-  margin-top: 8rem;
-}
-
 .navbar-brand {
   padding-left: 4rem;
 }
@@ -47,9 +43,22 @@ h2 {
 }
 
 .main {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(225, 225, 225);
+}
+
+.card {
+  width: 25vw !important;
+  height: 35vw !important;
+  font-size: 1.6vw;
+}
+@media (max-width: 1050px) {
+  .card {
+    width: 25vw !important;
+    height: 40vw !important;
+    font-size: 1.6vw;
+  }
 }
