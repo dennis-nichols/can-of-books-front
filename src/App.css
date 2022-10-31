@@ -1,0 +1,35 @@
+.carousel.slide {
+  margin: auto;
+  width: 100vw;
+
+}
+.d-block.w-50 {
+  margin: auto;
+  height: 60vh;
+  aspect-ratio: auto;
+  border: 5px solid rgb(245, 191, 120);
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0% !important;
+    left: 25% !important;
+    padding: 1.25rem;
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 50%;
+    height: 100%;
+}
+
+.carousel-caption h3 {
+  font-size: 5vw;
+  color: white;
+  /* -webkit-text-stroke: rgba(13, 12, 14, 0.5) 1px; */
+  margin-top: 10rem;
+}
+
+.carousel-caption p {
+  font-weight: 600;
+}
+
