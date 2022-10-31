@@ -1,7 +1,6 @@
 .carousel.slide {
   margin: auto;
   width: 100vw;
-
 }
 .d-block.w-50 {
   margin: auto;
@@ -11,15 +10,15 @@
 }
 
 .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 0% !important;
-    left: 25% !important;
-    padding: 1.25rem;
-    text-align: center;
-    background-color: rgba(1, 1, 1, 0.5);
-    width: 50%;
-    height: 100%;
+  position: absolute;
+  right: 15%;
+  bottom: 0% !important;
+  left: 25% !important;
+  padding: 1.25rem;
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 50%;
+  height: 100%;
 }
 
 .carousel-caption h3 {
@@ -33,3 +32,24 @@
   font-weight: 600;
 }
 
+.navbar:last-child {
+  margin-top: 8rem;
+}
+
+.navbar-brand {
+  padding-left: 4rem;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(225, 225, 225);
+}
