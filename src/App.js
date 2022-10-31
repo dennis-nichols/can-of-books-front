@@ -9,7 +9,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import About from './About'
+import About from './components/About'
 
 
 class App extends React.Component {

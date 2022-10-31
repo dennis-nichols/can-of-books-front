@@ -1,5 +1,5 @@
 import { Component } from "react";
-import AboutCard from "./AboutCard";
+import AboutCard from "../AboutCard";
 
 class Profile extends Component {
 
