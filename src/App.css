@@ -82,6 +82,10 @@ h2 {
   color: whitesmoke;
 }
 
+.nav-link:visited:hover {
+  color: pink;
+}
+
 @media (max-width: 1050px) {
   .card {
     width: 25vw !important;
