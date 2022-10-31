@@ -4,23 +4,33 @@
 **Version**: 1.0.0
 
 ## Overview
+
 This will be an app to track books that have impacted us and to track new reccomendations for the future.
 
 ## Getting Started
+
 To make this app, someone will need to understand the MERN stack and install all req'd dependencies for MongoDB, Express, React, Node
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+This is a basic CRUD app using the MERN stack.
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+Nothing yet.
 
 ## Estimates
-<!-- See below -->
+
+### Feature 1 - Display a carousel of books
+
+- Estimated: 30 min
+- Time start: 4:45 pm
+- Time end: 5:45 pm
+- Actual time: 1 hour
 
 ## Credit and Collaborations
+
+Agreement below.
 
 ### Logistical
 
@@ -52,4 +62,3 @@ To make this app, someone will need to understand the MERN stack and install all
   We’ll talk directly about it and find out what the underlying reason is - e.g. if that person is anxious about not getting done in time or something.
 - How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in     understanding and skill level?
   We’ll try to split up the work based on our strengths and each person will give an honest effort.
-
