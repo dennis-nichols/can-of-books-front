@@ -1,0 +1,95 @@
+.carousel.slide {
+  margin: auto;
+  width: 100vw;
+}
+.d-block.w-50 {
+  margin: auto;
+  height: 60vh;
+  aspect-ratio: auto;
+  border: 5px solid rgb(245, 191, 120);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0% !important;
+  left: 25% !important;
+  padding: 1.25rem;
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 50%;
+  height: 100%;
+}
+
+.carousel-caption h3 {
+  font-size: 5vw;
+  color: white;
+  /* -webkit-text-stroke: rgba(13, 12, 14, 0.5) 1px; */
+  margin-top: 10rem;
+}
+
+.carousel-caption p {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  padding-left: 4rem;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(225, 225, 225);
+}
+
+.card {
+  width: 25vw !important;
+  height: 35vw !important;
+  font-size: 1.6vw;
+}
+
+.navbar:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar:last-child {
+  margin-top: 8rem;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link:hover {
+  color: pink;
+}
+
+.nav-link:visited {
+  color: whitesmoke;
+}
+
+.nav-link:visited:hover {
+  color: pink;
+}
+
+@media (max-width: 1050px) {
+  .card {
+    width: 25vw !important;
+    height: 40vw !important;
+    font-size: 1.6vw;
+  }
+}
