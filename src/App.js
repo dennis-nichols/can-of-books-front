@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BestBooks from './components/BestBooks';
+import New from './components/New';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
@@ -29,7 +30,11 @@ class App extends React.Component {
                 exact path='/about'
                 element={<About />}
               ></Route>
-              {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
+              <Route
+                exact path='/new'
+                element={<><BestBooks /><New /></>}
+              ></Route>
+
             </Routes>
             <Footer />
           </main>
