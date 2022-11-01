@@ -5,6 +5,7 @@
 
 ## Overview
 
+[Live View can be found here](https://cerulean-toffee-48097d.netlify.app/)
 This will be an app to track books that have impacted us and to track new recommendations for the future.
 
 ## Getting Started
@@ -12,6 +13,10 @@ This will be an app to track books that have impacted us and to track new recomm
 To make this app, someone will need to understand the MERN stack and install all req'd dependencies for MongoDB, Express, React, Node
 
 ## Architecture
+
+<img src="https://user-images.githubusercontent.com/105423307/199095639-8ae7ffa9-7751-45b6-9f93-08ace3d7f78f.png"
+     alt="WRRC Diagram"
+     style="float: left; margin-right: 10px; width:50%" />
 
 This is a basic CRUD app using the MERN stack.
 
