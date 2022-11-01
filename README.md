@@ -5,7 +5,7 @@
 
 ## Overview
 
-[Live View can be found here](https://cerulean-toffee-48097d.netlify.app/)
+[Live View can be found here](https://cerulean-toffee-48097d.netlify.app/)  
 This will be an app to track books that have impacted us and to track new recommendations for the future.
 
 ## Getting Started
