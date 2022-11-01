@@ -19,7 +19,7 @@ class Profile extends Component {
             className={styles.card}
             img_src="https://cdn.discordapp.com/attachments/1020504235361718366/1025082272430440498/beerday2.jpg"
             name="Dennis"
-            words="Software development student with Code Fellows. Former US Navy servicemember and CDC public health professional."
+            words="Software development student with Code Fellows. Former US Navy service member and CDC public health professional."
           ></AboutCard>
         </div>
 
