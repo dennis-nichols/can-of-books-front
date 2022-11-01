@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./BooksCarousel.module.css";
 import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
 
 class BooksCarousel extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class BooksCarousel extends React.Component {
             <h3>{this.props.books[i].title}</h3>
             <p>{this.props.books[i].description}</p>
             <p>{this.props.books[i].available ? 'We have this in stock!' : 'Sorry, we\'ll have to order this.'}</p>
+            <Button id = {this.props.books[i]._id} variant='light' onClick={(e) => this.props.deleteHandler(e.target.id)}>Delete Book</Button>
           </Carousel.Caption>
         </Carousel.Item>
       );
