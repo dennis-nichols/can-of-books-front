@@ -60,6 +60,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-left: -2rem;
 }
 
 .navbar:last-child {
@@ -85,6 +86,8 @@ h2 {
 .nav-link:visited:hover {
   color: pink;
 }
+
+
 
 @media (max-width: 1050px) {
   .card {
