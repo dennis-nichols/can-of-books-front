@@ -45,7 +45,7 @@ class BestBooks extends React.Component {
     let id = this.state.delete_id;
     console.log(id);
     try {
-      let url = `${process.env.REACT_APP_SERVER1}/books/${id}`;
+      let url = `${process.env.REACT_APP_SERVER}/books/${id}`;
       await axios.delete(url);
 
       let updatedBooks = this.state.books.filter((book) => book._id !== id);
