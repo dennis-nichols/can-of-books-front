@@ -7,7 +7,7 @@ class BooksCarousel extends React.Component {
     let items = [];
     for (let i = 0; i < this.props.books.length; i++) {
       items.push(
-        <Carousel.Item className = {styles.BooksCarousel__container}>
+        <Carousel.Item key = {this.props.books[i]._id} className = {styles.BooksCarousel__container}>
           <img
             className= {`d-block w-50 ${styles.BooksCarousel}`}
             src="https://images.unsplash.com/photo-1647559708444-045256902ee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzI4fHxibGFjayUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
