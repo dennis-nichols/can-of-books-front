@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Form } from 'react-bootstrap'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 export default class NewForm extends Component {
   constructor(props) {
     super(props)
@@ -20,7 +20,7 @@ export default class NewForm extends Component {
       let url = `${process.env.REACT_APP_SERVER}/books`;
 
       await axios.post(url, newBookObj);
-
+      window.location.href = process.env.REACT_APP_FRONT
 
     } catch (error) {
       console.log(error.message);
@@ -32,8 +32,8 @@ export default class NewForm extends Component {
       title: e.target.title.value,
       description: e.target.desc.value,
       available: e.target.boolean.value
-
     })
+
     this.props.onCloseModal()
   }
 
@@ -62,10 +62,10 @@ export default class NewForm extends Component {
             <option value="false">Out of stock</option>
           </Form.Select>
         </Form.Group>
-        <Link to="/" className="nav-link">About
-          <Button type='submit' variant="primary">
-            Save Changes
-          </Button></Link>
+
+        <Button type='submit' variant="primary">
+          Save Changes
+        </Button>
       </Form >
     )
   }
