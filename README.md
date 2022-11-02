@@ -1,7 +1,7 @@
 # Can of Books - Front End
 
 **Author**: Dennis Nichols & Lewis Benson
-**Version**: 1.1.0
+**Version**: 1.3.0
 
 ## Overview
 
@@ -46,6 +46,13 @@ Nothing yet.
 - Time start: 5:15 pm
 - Time end: 8:15 pm
 - Actual time: 3 hour
+
+### Feature 3 - Add ability to update book entries
+
+- Estimated: 1 hour
+- Time start: 4:15 pm
+- Time end: 5:15 pm
+- Actual time: 1 hour
 
 ## Credit and Collaborations
 
