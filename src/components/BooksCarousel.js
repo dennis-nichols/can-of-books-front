@@ -18,7 +18,8 @@ class BooksCarousel extends React.Component {
             <h3>{this.props.books[i].title}</h3>
             <p>{this.props.books[i].description}</p>
             <p>{this.props.books[i].available ? 'We have this in stock!' : 'Sorry, we\'ll have to order this.'}</p>
-            <Button id = {this.props.books[i]._id} variant='light' onClick={(e) => this.props.deleteHandler(e.target.id)}>Delete Book</Button>
+            <Button id = {this.props.books[i]._id} variant='danger' onClick={(e) => this.props.deleteHandler(e.target.id)}>Delete Book</Button>
+            <Button id = {this.props.books[i]._id} variant='light' onClick={(e) => this.props.updateHandler(e.target.id)}>Edit Book</Button>
           </Carousel.Caption>
         </Carousel.Item>
       );
