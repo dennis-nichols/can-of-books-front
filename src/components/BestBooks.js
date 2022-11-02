@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import BooksCarousel from './BooksCarousel';
 import ConfirmModal from './ConfirmModal';
+import UpdateModal from './UpdateModal';
 
 class BestBooks extends React.Component {
   constructor(props) {
@@ -9,7 +10,10 @@ class BestBooks extends React.Component {
     this.state = {
       books: [],
       showModal: false,
-      delete_id: ''
+      showUpdateModal: false,
+      delete_id: "",
+      update_id: "",
+      available: false
     };
   }
 
@@ -28,22 +32,67 @@ class BestBooks extends React.Component {
     }
   };
 
+  handleCheckbox = event => {
+    this.setState({
+      available: event.target.checked
+    })
+  }
 
   handleCloseModal = () => {
     this.setState({ showModal: false });
+  };
+
+  handleCloseUpdate = () => {
+    this.setState({ showUpdateModal: false });
   };
 
   deleteHandler = (id) => {
     console.log(id);
     this.setState({
       showModal: true,
-      delete_id: id
+      delete_id: id,
     });
+  };
+
+  updateHandler = (id) => {
+    console.log(id);
+    this.setState({
+      showUpdateModal: true,
+      update_id: id,
+    });
+  };
+
+  updateBook = async (updatedBookObj) => {
+    let id = this.state.update_id;
+    console.log(id, updatedBookObj);
+    try {
+      let url = `${process.env.REACT_APP_SERVER}/books/${id}`;
+      await axios.put(url, updatedBookObj);
+
+      let updatedBooks = this.state.books.filter((book) => book._id !== id);
+
+      this.setState({
+        books: [...updatedBooks, updatedBookObj]
+      });
+    } catch (error) {
+      console.log("Book not updated due to: " + error.message);
+    }
+    this.handleCloseUpdate();
+  };
+
+  submitUpdate = (e) => {
+    e.preventDefault();
+    console.log(e.target.title.value);
+     this.updateBook({
+       title: e.target.title.value,
+       description: e.target.description.value,
+       available: this.state.available,
+     });
   };
 
   deleteBooks = async () => {
     let id = this.state.delete_id;
-    console.log(id);
+
     try {
       let url = `${process.env.REACT_APP_SERVER}/books/${id}`;
       await axios.delete(url);
@@ -74,15 +123,23 @@ class BestBooks extends React.Component {
           <BooksCarousel
             books={this.state.books}
             deleteHandler={this.deleteHandler}
-          ></BooksCarousel>
+            updateHandler={this.updateHandler}
+          />
         ) : (
           <h3>No Books Found :(</h3>
         )}
         <ConfirmModal
-        show = {this.state.showModal}
-        onHide = {this.handleCloseModal}
-        delete = {this.deleteBooks}>
-        </ConfirmModal>
+          show={this.state.showModal}
+          onHide={this.handleCloseModal}
+          delete={this.deleteBooks}
+        />
+        <UpdateModal
+          show={this.state.showUpdateModal}
+          onHide={this.handleCloseUpdate}
+          submitUpdate={this.submitUpdate}
+          handleCheckbox = {this.handleCheckbox}
+          available = {this.state.available}
+        />
       </>
     );
   }
